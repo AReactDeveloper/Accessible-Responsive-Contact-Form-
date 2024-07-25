@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the site is properly displayed on various devices -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <title>Frontend Mentor | Contact Form</title>
+  <script src="./dist/app.js" defer></script>
+</head>
+
+<body>
+  <main id="main">
+    <div class="succesMsg">
+      <h2><img src="./assets/images/icon-success-check.svg" alt=""> Message sent</h2>
+      <p>Thanks for completing this form we will be in touch soon </p>
+    </div>
+    <div class="form-card">
+      <h1>Contact Us</h1>
+      <h2 id="formTitle" class="visibility-hidden sr-only">Contact Us Form</h2> <!-- Hidden from view but accessible to screen readers -->
+      <form action="#" id="myForm" class="form-card__form" aria-labelledby="formTitle">
+        <div class="form-group form-group-two">
+          <div class="form-group__form-two">
+            <div class="form-group__item">
+            <label for="firstName">First Name <span aria-hidden="true">*</span></label> <!-- Added aria-hidden to avoid confusing screen readers -->
+            <input type="text" name="firstName" id="firstName" aria-required="true" aria-describedby="firstNameError">
+            <span class="error-span" id="firstNameError" >This field is required</span> <!-- Hidden from view but available to screen readers -->
+          </div>
+          <div class="form-group__item">
+            <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+            <input type="text" name="lastName" id="lastName" aria-required="true" aria-describedby="lastNameError">
+            <span class="error-span" id="lastNameError" >This field is required</span>
+          </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="text" name="email" id="email" aria-required="true" aria-describedby="emailError">
+          <span class="error-span" id="emailError" >Please enter a valid email address</span>
+        </div>
+
+        <div class="form-group form-group-two">
+          <fieldset>
+            <legend>Query Type <span aria-hidden="true">*</span></legend>
+            <div class="checkbox-container">
+              <label class="container">General Enquiry
+                <input name="query"  type="radio" id="general" value="generalEnquiry">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Support Request
+                <input  name="query" type="radio" id="support" value="supportRequest">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </fieldset>
+          <span id="queryError" class="error-span" id="queryTypeError" >Please select at least one query type</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea name="message" id="message" aria-required="true" aria-describedby="messageError"></textarea>
+          <span class="error-span" id="messageError" >This field is required</span>
+        </div>
+
+        <div class="form-card__form__consent ">
+          <input type="checkbox" name="consent" id="consent" aria-required="true">
+          <label for="consent">To submit this form, please consent to being contacted</label>
+        </div>
+        <span class="error-span" id="messageError" >to submit this form please consent on being contact</span>
+
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

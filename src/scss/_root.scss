@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* Layout */
+    --mobile-width: 375px;  /* You can keep px for layout width, as it’s a fixed dimension */
+    --desktop-width: 1440px;
+  
+    /* Colors */
+    --clr-green-200: hsl(148, 38%, 91%);
+    --clr-green-600: hsl(169, 82%, 27%);
+    --clr-red: hsl(0, 66%, 54%);
+  
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-500: hsl(186, 15%, 59%);
+    --clr-grey-900: hsl(187, 24%, 22%);
+  
+    /* Typography */
+    --ff-primary: 'Karla', sans-serif;  /* Font Family */
+    --ff-secondary: 'Arial', sans-serif;  /* Optional: add a secondary font for fallbacks */
+  
+    --fw-normal: 400;  /* Font Weight */
+    --fw-bold: 700;
+  
+    --fs-labels: 1rem;  /* Font Size (16px / 16 = 1rem) */
+    --fs-body: 1rem;  /* Font Size (16px / 16 = 1rem) */
+  
+    /* Spacing */
+    --spacing-100: 0.5rem;  /* 8px  */
+    --spacing-200: 1rem;  /* 16px   */
+    --spacing-250: 1.25rem;  /* 20px   */
+    --spacing-300: 2rem;  /* 32px   */
+    --spacing-400: 3.125rem;  /* 50px   */
+  
+    /* Borders */
+    --border-radius-regular: 0.625rem;  /* 10px */
+    --border-radius-small: 0.313rem;  /* 5px */
+  
+    /* Shadows */
+    --shadow-small: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);  /* 1px / 16 = 0.0625rem */
+    --shadow-medium: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);  /* 2px / 16 = 0.125rem */
+    --shadow-large: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);  /* 4px / 16 = 0.25rem */
+  }
+  

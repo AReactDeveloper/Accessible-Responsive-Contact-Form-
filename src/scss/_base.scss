@@ -1,0 +1,18 @@
+body {
+    background-color: var(--clr-green-200);   
+    font-size: var(--fs-body); 
+    color: var(--clr-grey-900);  
+}
+
+.input-error {
+    outline: 1px solid var(--clr-red) !important; 
+}
+
+.error-msg {
+    display: block;  
+    color: var(--clr-red);  
+}
+
+.error-span{
+    display: none;
+}
